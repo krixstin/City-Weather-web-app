@@ -1,4 +1,4 @@
-# TEMPCA: city weather
+# City-Weather-web-app
 
 
 Utilizing APIs, Javascript & JSON, 
