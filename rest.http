@@ -1,0 +1,9 @@
+# GET https://reqres.in/api/users
+
+# GET http://api.airvisual.com/v2/countries?key=88d3ba84-ab77-4c95-a361-26a81eceb923
+
+# GET  http://api.airvisual.com/v2/states?country=USA&key=88d3ba84-ab77-4c95-a361-26a81eceb923
+
+http://api.airvisual.com/v2/cities?state=New Jersey&country=USA&key=88d3ba84-ab77-4c95-a361-26a81eceb923
+
+GET http://api.airvisual.com/v2/nearest_city?key=

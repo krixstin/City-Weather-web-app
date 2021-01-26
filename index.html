@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>   
+<head>
+    <title>
+        City Weather
+    </title>
+    <script src="weather.js"></script>
+</head>
+
+<body>
+    <h1>Current Temperature <br>At Your City</h1>
+    
+    City: <input id="inputCity" value="Fort Lee" placeholder="Enter Your City"></input> <br>
+    °C<input type= "checkbox" id="checkMetric" value="'C">   
+    °F<input type= "checkbox" id="checkImperial" value="'F"> 
+    <button onclick="getWeather()" id="submit"> Enter </button>   
+    <p id="error"></p>
+    
+
+    <div id="weather">
+        <p id="city"></p> 
+        <p id="desc" ></p>
+        
+        <strong><p id="temp" ></p></strong>
+        <p id="feels_like"></p>
+
+        <p id="min"></p> <p id="max"></p>
+        
+        <!-- <img scr="wind_deg.png" width="25" height="25" alt= "wind_deg"> 
+        <img scr="wind_spd.jpg" width="25" height="25" alt= "wind_spd">  -->
+        
+        <p id="humidity"></p>
+        <p id="wind_speed"></p>
+        <p id="wind_deg"></p>
+        <p id="cloud" ></p>
+        <p id="pressure"></p>
+        
+    </div>
+
+
+</body>
+
+</html>
