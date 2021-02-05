@@ -16,6 +16,7 @@ function getWeather(){
         document.getElementById("error").innerText= "Please uncheck °C if you wish to see in °F";
     }else if (cel.checked ==true){
         unit="metric";
+
         unitSpeed=" meter/sec";
         unitTemp=" °C";
     }else if (fah.checked== true){
@@ -52,7 +53,7 @@ function getWeather(){
         var short_desc= data.weather.main;
         var desc= data.weather[0]["description"];
         
-        document.getElementById('city').textContent= city.toUpperCase();
+        document.getElementById('city').innerText= city.toUpperCase();
 
         document.getElementById("temp").textContent = temp + unitTemp;
         document.getElementById("feels_like").textContent = "Feels like " +feels_like + unitTemp;
@@ -67,7 +68,6 @@ function getWeather(){
         document.getElementById("wind_deg").textContent = "Wind Direction "+ data.wind.deg +unitTemp ;
         document.getElementById("cloud").textContent = "Cloudness " + data.clouds.all+ "%" ;
         document.getElementById("pressure").textContent = "Pressure " + data.main.pressure+ " hPa" ;
-
         
     }
     

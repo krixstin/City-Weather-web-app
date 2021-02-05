@@ -5,38 +5,42 @@
         City Weather
     </title>
     <script src="weather.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" >
+
 </head>
 
 <body>
-    <h1>Current Temperature <br>At Your City</h1>
+    <div id="top"><h1>TEMPERATURE AT</h1>
     
-    City: <input id="inputCity" value="Fort Lee" placeholder="Enter Your City"></input> <br>
-    °C<input type= "checkbox" id="checkMetric" value="'C">   
+    <div id="inputBox"><input type="text" id="inputCity" style="color: white;" value="Fort Lee" placeholder="Enter Your City" size="9" ></input></div>
+    °C<input type= "checkbox" id="checkMetric" value="'C" >   
     °F<input type= "checkbox" id="checkImperial" value="'F"> 
     <button onclick="getWeather()" id="submit"> Enter </button>   
-    <p id="error"></p>
     
-
-    <div id="weather">
-        <p id="city"></p> 
+    </div><p id="error" style="text-align: center;"></p>
+    <div id="large">
+        <p id="city" style="font-size: ;" >YOUR CITY</p> 
         <p id="desc" ></p>
         
         <strong><p id="temp" ></p></strong>
-        <p id="feels_like"></p>
-
-        <p id="min"></p> <p id="max"></p>
+        
+        <div id="three">
+            <p id="feels_like"></p>
+            <p id="min"></p> 
+            <p id="max"></p>
+        </div>
         
         <!-- <img scr="wind_deg.png" width="25" height="25" alt= "wind_deg"> 
         <img scr="wind_spd.jpg" width="25" height="25" alt= "wind_spd">  -->
         
-        <p id="humidity"></p>
+        
+        
+    </div>
+<p id="humidity"></p>
         <p id="wind_speed"></p>
         <p id="wind_deg"></p>
         <p id="cloud" ></p>
         <p id="pressure"></p>
-        
-    </div>
-
 
 </body>
 

@@ -1,0 +1,89 @@
+/* document.getElementById("p2").style.color = "blue"; */
+
+/* body, #weather {
+    margin: auto 30%;
+
+} */
+ *{
+   font-family:  system-ui;
+ }
+#top{
+    width:380px; margin:0 auto;
+    text-align: center;
+    background-image: url("images/layout.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:15px;
+    border-radius:40px;
+    color:rgb(56, 49, 49);
+    margin-top:30px;
+}
+h1 {
+    color:rgb(19, 18, 18);
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom:5px;
+}
+
+#inputCity {
+    height:30px;
+    font-size: 18px;
+}
+#inputBox{
+    display: inline-block;
+    background-color: rgb(77, 99, 88);
+    border-radius: 14px;
+    border:4px solid rgb(96, 116, 106);
+    margin: 5px 0px;
+}
+input[type="text"]
+{
+    background: transparent; 
+    outline:none;
+    border: none;
+    margin-left: 5px;
+    
+} 
+#submit{
+    font-size: 18px;
+    color: rgb(8, 7, 7);
+    background:  rgb(192, 221, 204);
+    outline: none;
+    border: 5px solid white;
+    border-radius: 8px;
+    
+}
+#large {    
+    width: 350px;
+    margin: 0 auto;
+    text-align:center;
+    padding:30px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    /* background-color:rgb(243, 201, 201);
+     */
+     background-image: url("images/layout.png");
+     background-position: center;
+    background-repeat: no-repeat;
+   background-size: cover;
+    border-radius: 40px;
+}
+
+#city, #temp{
+    font-size: 50px;
+    margin:0px;
+}
+
+#desc{
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+#feels_like, #min, #max{
+    text-align: left;
+    
+}
+#three{
+    margin: 0 auto;
+    width:140px;
+}
