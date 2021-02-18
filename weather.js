@@ -11,21 +11,21 @@ function getWeather(){
 
     if (cel.checked==true && fah.checked==true){
         unit="metric";
-        unitSpeed=" meter/sec";
+        unitSpeed=" m/sec";
         unitTemp=" °C";
         document.getElementById("error").innerText= "Please uncheck °C if you wish to see in °F";
     }else if (cel.checked ==true){
         unit="metric";
 
-        unitSpeed=" meter/sec";
+        unitSpeed=" m/sec";
         unitTemp=" °C";
     }else if (fah.checked== true){
         unit="imperial";
-        unitSpeed=" miles/hour";
+        unitSpeed=" mi/hr";
         unitTemp=" °F"
     }else{
         unit ="metric" ;
-        unitSpeed=" meter/sec";
+        unitSpeed=" m/sec";
         unitTemp=" °C";
         document.getElementById("error").innerText = "Temperature is in °C by default";
     }
@@ -64,8 +64,8 @@ function getWeather(){
         document.getElementById("desc").textContent = desc ;
 
         document.getElementById("humidity").textContent = "Humidity " +data.main.humidity+ "%" ;
-        document.getElementById("wind_speed").textContent = "Wind Speed "+data.wind.speed + unitSpeed;
-        document.getElementById("wind_deg").textContent = "Wind Direction "+ data.wind.deg +unitTemp ;
+        document.getElementById("wind_speed").textContent = "Wind "+data.wind.speed + unitSpeed;
+        document.getElementById("wind_deg").textContent = "Wind Dir "+ data.wind.deg +unitTemp ;
         document.getElementById("cloud").textContent = "Cloudness " + data.clouds.all+ "%" ;
         document.getElementById("pressure").textContent = "Pressure " + data.main.pressure+ " hPa" ;
         

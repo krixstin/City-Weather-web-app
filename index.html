@@ -10,38 +10,60 @@
 </head>
 
 <body>
-    <div id="top"><h1>TEMPERATURE AT</h1>
-    
-    <div id="inputBox"><input type="text" id="inputCity" style="color: white;" value="Fort Lee" placeholder="Enter Your City" size="9" ></input></div>
-    °C<input type= "checkbox" id="checkMetric" value="'C" >   
-    °F<input type= "checkbox" id="checkImperial" value="'F"> 
-    <button onclick="getWeather()" id="submit"> Enter </button>   
-    
-    </div><p id="error" style="text-align: center;"></p>
-    <div id="large">
-        <p id="city" style="font-size: ;" >YOUR CITY</p> 
-        <p id="desc" ></p>
+    <div id="camera">
+
+    <div id="top_components">
+        <div id="inputBox"><input type="text" id="inputCity"  value="Fort Lee" placeholder="Enter Your City" size="20" ></input></div>
+        <button onclick="getWeather()" id="submit"> Enter </button>  
+    </div>
+
+    <div id="grey_component" >
+        <h1>WEATHER AT</h1> 
+
+        <div id="unit_checker">
+            <label class="container">
+            °C<input type= "radio" id="checkMetric" value="'C" checked="checked" name="radio"> 
+            <span class="checkmark"></span> 
+            </label>
+
+            <label class="container">
+                °F<input type= "radio" id="checkImperial" value="'F"checked="checked" name="radio"> 
+                <span class="checkmark"></span> 
+            </label> 
+        </div>
+    </div>
         
-        <strong><p id="temp" ></p></strong>
-        
-        <div id="three">
-            <p id="feels_like"></p>
-            <p id="min"></p> 
-            <p id="max"></p>
+    
+    
+    <div id="cam_body">
+
+        <div id="leftbox">
+            <p id="humidity"></p>
+            <p id="wind_speed"></p>
+            <p id="wind_deg"></p>
+            <p id="cloud" ></p>
+            <p id="pressure"></p>
+        </div>
+
+        <div id="circle">
+            <p id="desc" ></p>
+            <p id="city" style="font-size:30px ;" ></p> 
+            <strong><p id="temp" ></p></strong>
+        </div>
+
+        <div id="rightbox">
+            <div class="right" id="forcast">
+            </div>
+            <div class="right" id="three">
+                    <p id="feels_like"></p>
+                    <p id="min"></p> 
+                    <p id="max"></p>
+            </div>
         </div>
         
-        <!-- <img scr="wind_deg.png" width="25" height="25" alt= "wind_deg"> 
-        <img scr="wind_spd.jpg" width="25" height="25" alt= "wind_spd">  -->
-        
-        
-        
     </div>
-<p id="humidity"></p>
-        <p id="wind_speed"></p>
-        <p id="wind_deg"></p>
-        <p id="cloud" ></p>
-        <p id="pressure"></p>
-
+    
+    </div></div>
 </body>
 
 </html>
