@@ -1,9 +1,11 @@
-# City-Weather-web-app
+# WeatherAt: city-weather-web-app
 
+## Demo :sunny::cloud::umbrella::snowflake::zap:
+![WeatherAt-Demo](images/demo.gif)
 
-Utilizing APIs, Javascript & JSON, 
-the project enables users to enter their city to see a display of max/min/current temperate and humidity
+## Features & Languages Used
+* Enables users to enter their city 
+* Displays **current** temperature, short description, humidity, wind speed & direction, cloudness and pressure
+* Utilized OpenWeather **API**, **Javascript** & **JSON**, **HTML** and **CSS** 
 
-API used: OpenWeather
-
-![City Weather Demo](images/demo.gif)
+Last Update (02/18/2021)
