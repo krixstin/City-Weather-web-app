@@ -228,7 +228,8 @@ input[type="text"]
     background-position: 10%;
     background-repeat: no-repeat;
 }
-p{background: transparent;}
+p{background: transparent;
+font-weight: bold;}
 
 .right p{
     font-size: 13px;
@@ -236,7 +237,7 @@ p{background: transparent;}
     
 }
 #three{
-    padding-left:20px;
+    padding-left:15px;
     width: 120px;
     padding-top: 20px;
     height: 100px;
